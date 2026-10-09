@@ -1,0 +1,6 @@
+| No. | Temuan                                              | Perbaikan yang diperlukan                                     |Alasan                                           |
+| --- | --------------------------------------------------- | ------------------------------------------------------------- |-------------------------------------------------|
+| 1   | Aktor berada diluar sistem                          | Aktor Berada diluar sistem                                    |Sudah menjadi aturannya aktor harus diluar sistem|
+| 2   | Notasi Lihat jadwal pakai kotak                     | Notasi harus pakai elips                                      |Notasi memang harus pakai elips                  |
+| 3   | Aktor mahasiswa dihubungkan ke Notasi Kelola jadwal | Aktor mahasiswa dihubungkan ke lihat jadwal                   |Karena mahasiswa pasti melihat jadwal            |
+| 4   | Aktor Admin Akademik tidak ada                      | Tambahkan aktor akademik, lalu hubungkan dengan kelola jadwal |Aktor akademik bertugas mengelola jadwal         |
