@@ -11,6 +11,9 @@
 
 # Pertemuan 2
 # Unified Modeling Language
+<<<<<<< HEAD
 
 # Pertemuan 3
 # Use Case Diagram dan Use Case Description
+=======
+>>>>>>> 6d957bc84d58e6e52bffaebb526fef3c05b05eb5

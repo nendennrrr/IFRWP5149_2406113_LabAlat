@@ -1,4 +1,8 @@
 # Spesifikasi Use Case Sistem Informasi Akademik
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6d957bc84d58e6e52bffaebb526fef3c05b05eb5
 ## SIA-UC02 — Ajukan KRS
 
 | Elemen                | Keterangan                                                                       |
