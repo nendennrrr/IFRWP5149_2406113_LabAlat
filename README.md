@@ -17,3 +17,6 @@
 
 # Pertemuan 4
 # Use Case Diagram Lanjutan: Generalization Dan Collaboration
+
+# Pertemuan 5
+# SKENARIO USE CASE: DARI DIAGRAM KE LANGKAH KEGIATAN
