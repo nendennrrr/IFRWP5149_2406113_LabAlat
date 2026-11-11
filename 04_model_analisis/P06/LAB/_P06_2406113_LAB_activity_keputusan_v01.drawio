@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Activity Diagram Proses Keputusan Peminjaman" id="ProsesKeputusanPeminjaman">
+    <mxGraphModel dx="1363" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane_petugas" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;fontSize=14;" value="Petugas Laboratorium" vertex="1">
+          <mxGeometry height="930" width="300" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="node_init" parent="lane_petugas" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="135" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="act_buka_daftar" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;" value="Membuka daftar pengajuan yang&#xa;berstatus Menunggu Keputusan" vertex="1">
+          <mxGeometry height="45" width="220" x="40" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pilih_keputusan" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Memilih pengajuan dan menetapkan&#xa;persetujuan atau penolakan" vertex="1">
+          <mxGeometry height="45" width="220" x="40" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;fontSize=14;" value="Sistem" vertex="1">
+          <mxGeometry height="930" width="320" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_tampil_daftar" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menampilkan daftar pengajuan yang&#xa;berstatus Menunggu Keputusan" vertex="1">
+          <mxGeometry height="45" width="220" x="60" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_dapat_diproses" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Pengajuan&#xa;dapat diproses?" vertex="1">
+          <mxGeometry height="60" width="130" x="105" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="act_err_tdk_diproses" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan pengajuan tidak&#xa;dapat diproses" vertex="1">
+          <mxGeometry height="45" width="220" x="60" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_disetujui" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Pengajuan&#xa;disetujui?" vertex="1">
+          <mxGeometry height="60" width="130" x="95" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="act_setuju" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Mengubah status pengajuan menjadi&#xa;Disetujui dan menampilkan konfirmasi" vertex="1">
+          <mxGeometry height="45" width="220" x="50" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="act_tolak" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Mengubah status pengajuan menjadi&#xa;Ditolak dan menampilkan konfirmasi&#xa;penolakan" vertex="1">
+          <mxGeometry height="50" width="220" x="50" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_node" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="140" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="node_final" parent="lane_sistem" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="145" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="e_init" edge="1" parent="1" source="node_init" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_buka_daftar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_buka_to_tampil" edge="1" parent="1" source="act_buka_daftar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_tampil_daftar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_tampil_to_dec1" edge="1" parent="1" source="act_tampil_daftar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="dec_dapat_diproses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dapat_diproses" edge="1" parent="1" source="dec_dapat_diproses" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_pilih_keputusan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_dapat_diproses" connectable="0" parent="e_dapat_diproses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[dapat diproses]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_tdk_dapat_diproses" edge="1" parent="1" source="dec_dapat_diproses" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_err_tdk_diproses">
+          <mxGeometry relative="1" x="0.6643" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="370" />
+              <mxPoint x="500" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_tdk_dapat_diproses" connectable="0" parent="e_tdk_dapat_diproses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak dapat diproses]" vertex="1">
+          <mxGeometry relative="1" x="0.6286" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pilih_to_dec2" edge="1" parent="1" source="act_pilih_keputusan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="dec_disetujui">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_disetujui" edge="1" parent="1" source="dec_disetujui" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_setuju">
+          <mxGeometry relative="1" x="0.0074" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_disetujui" connectable="0" parent="e_disetujui" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[disetujui]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ditolak" edge="1" parent="1" source="dec_disetujui" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_tolak">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="540" />
+              <mxPoint x="620" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_ditolak" connectable="0" parent="e_ditolak" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[ditolak]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_setuju_to_merge" edge="1" parent="1" source="act_setuju" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="merge_node">
+          <mxGeometry relative="1" x="-0.2122" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="650" />
+              <mxPoint x="360" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_tolak_to_merge" edge="1" parent="1" source="act_tolak" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="merge_node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_err_to_merge" edge="1" parent="1" source="act_err_tdk_diproses" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="merge_node">
+          <mxGeometry relative="1" x="-0.4571" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="460" />
+              <mxPoint x="640" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_merge_to_final" edge="1" parent="1" source="merge_node" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="node_final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

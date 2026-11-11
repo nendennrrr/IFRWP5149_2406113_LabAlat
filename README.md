@@ -20,3 +20,6 @@
 
 # Pertemuan 5
 # SKENARIO USE CASE: DARI DIAGRAM KE LANGKAH KEGIATAN
+
+# Pertemuan 6
+# Activity Diagram: Dari Skenario Ke Alur Aktivitas

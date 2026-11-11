@@ -1,0 +1,264 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Activity Diagram Kelola Data Peralatan" id="KelolaDataPeralatan">
+    <mxGraphModel dx="2428" dy="1409" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane_petugas" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;fontSize=14;" value="Petugas Laboratorium" vertex="1">
+          <mxGeometry height="1690" width="340" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="node_init" parent="lane_petugas" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="155" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="act_buka_fungsi" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;" value="Membuka fungsi Kelola Data Peralatan" vertex="1">
+          <mxGeometry height="45" width="220" x="60" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pilih_bentuk" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;" value="Memilih bentuk pengelolaan&#xa;(tambah / ubah / hapus)" vertex="1">
+          <mxGeometry height="45" width="220" x="60" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="act_isi_tambah" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;" value="Mengisi data peralatan baru&#xa;(dari LAB-UC08)" vertex="1">
+          <mxGeometry height="45" width="220" x="80" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pilih_ubah" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;" value="Memilih data peralatan yang akan diubah&#xa;(dari LAB-UC09)" vertex="1">
+          <mxGeometry height="45" width="220" x="60" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="act_ubah_data" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Mengubah data peralatan&#xa;(LAB-UC09)" vertex="1">
+          <mxGeometry height="45" width="220" x="60" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="act_pilih_hapus" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;" value="Memilih data peralatan yang akan dihapus&#xa;(dari LAB-UC10)" vertex="1">
+          <mxGeometry height="45" width="220" x="60" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="act_konfirmasi_hapus" parent="lane_petugas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Konfirmasi hapus data peralatan&#xa;(LAB-UC10)" vertex="1">
+          <mxGeometry height="45" width="220" x="20" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sistem" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;fontSize=14;" value="Sistem" vertex="1">
+          <mxGeometry height="1690" width="360" x="380" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act_tampil_daftar" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menampilkan daftar peralatan" vertex="1">
+          <mxGeometry height="45" width="220" x="70" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_bentuk" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Bentuk&#xa;pengelolaan&#xa;yang dipilih?" vertex="1">
+          <mxGeometry height="70" width="130" x="115" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="act_tampil_form" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menampilkan formulir data peralatan baru" vertex="1">
+          <mxGeometry height="45" width="220" x="70" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="act_tampil_saat_ini" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menampilkan data peralatan saat ini" vertex="1">
+          <mxGeometry height="45" width="220" x="70" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_ada_data" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Data peralatan&#xa;ditemukan?" vertex="1">
+          <mxGeometry height="60" width="130" x="115" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="act_err_tdk_ada" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan data peralatan&#xa;tidak ditemukan" vertex="1">
+          <mxGeometry height="45" width="220" x="70" y="619" as="geometry" />
+        </mxCell>
+        <mxCell id="act_periksa_syarat_hapus" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Memeriksa peralatan tidak sedang&#xa;dipinjam dan tidak memiliki pengajuan aktif" vertex="1">
+          <mxGeometry height="55" width="220" x="70" y="698" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_syarat_hapus" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Syarat&#xa;penghapusan&#xa;terpenuhi?" vertex="1">
+          <mxGeometry height="60" width="130" x="115" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="act_err_masih_terpakai" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menolak penghapusan dan&#xa;menampilkan pesan peralatan masih terpakai" vertex="1">
+          <mxGeometry height="50" width="220" x="70" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="merge_tiga_cabang" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="160" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="act_periksa_absah" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Memeriksa kelengkapan dan&#xa;keabsahan data" vertex="1">
+          <mxGeometry height="45" width="220" x="70" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_absah" parent="lane_sistem" style="rhombus;whiteSpace=wrap;html=1;" value="Data lengkap&#xa;dan sah?" vertex="1">
+          <mxGeometry height="60" width="130" x="115" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="act_err_sah" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menolak penyimpanan dan&#xa;menampilkan pesan kesalahan data" vertex="1">
+          <mxGeometry height="45" width="220" x="80" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_simpan" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;" value="Menyimpan perubahan dan&#xa;menampilkan konfirmasi" vertex="1">
+          <mxGeometry height="45" width="220" x="70" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="node_final" parent="lane_sistem" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="165" y="1570" as="geometry" />
+        </mxCell>
+        <mxCell id="e_init" edge="1" parent="1" source="node_init" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_buka_fungsi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_buka_to_tampil" edge="1" parent="1" source="act_buka_fungsi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_tampil_daftar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_tampil_to_pilih" edge="1" parent="1" source="act_tampil_daftar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_pilih_bentuk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pilih_to_dec" edge="1" parent="1" source="act_pilih_bentuk" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="dec_bentuk">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="287.5" />
+              <mxPoint x="440" y="287.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_tambah" edge="1" parent="1" source="dec_bentuk" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_tampil_form">
+          <mxGeometry relative="1" x="0.697" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="295" />
+              <mxPoint x="700" y="437.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_tambah" connectable="0" parent="e_tambah" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tambah]" vertex="1">
+          <mxGeometry relative="1" x="-0.0101" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_form_to_isi" edge="1" parent="1" source="act_tampil_form" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_isi_tambah">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_isi_to_merge" edge="1" parent="1" source="act_isi_tambah" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="merge_tiga_cabang">
+          <mxGeometry relative="1" x="0.0528" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="470" />
+              <mxPoint x="730" y="470" />
+              <mxPoint x="730" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ubah" edge="1" parent="1" source="dec_bentuk" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_pilih_ubah">
+          <mxGeometry relative="1" x="-0.2154" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="390" />
+              <mxPoint x="100" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_ubah" connectable="0" parent="e_ubah" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[ubah]" vertex="1">
+          <mxGeometry relative="1" x="-0.296" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pilih_ubah_to_tampil" edge="1" parent="1" source="act_pilih_ubah" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_tampil_saat_ini">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_tampil_to_dec_ada" edge="1" parent="1" source="act_tampil_saat_ini" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="dec_ada_data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_data_ditemukan" edge="1" parent="1" source="dec_ada_data" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_ubah_data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ditemukan" connectable="0" parent="e_data_ditemukan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[ditemukan]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_data_tdk_ditemukan" edge="1" parent="1" source="dec_ada_data" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_err_tdk_ada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tdk_ditemukan" connectable="0" parent="e_data_tdk_ditemukan" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak ditemukan]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ubah_to_merge" edge="1" parent="1" source="act_ubah_data" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="merge_tiga_cabang">
+          <mxGeometry relative="1" x="0.0851" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="720" />
+              <mxPoint x="710" y="720" />
+              <mxPoint x="710" y="1030" />
+              <mxPoint x="560" y="1030" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_hapus" edge="1" parent="1" source="dec_bentuk" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_pilih_hapus">
+          <mxGeometry relative="1" x="0.1298" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="340" />
+              <mxPoint x="70" y="340" />
+              <mxPoint x="70" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_hapus" connectable="0" parent="e_hapus" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[hapus]" vertex="1">
+          <mxGeometry relative="1" x="-0.0454" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pilih_hapus_to_periksa" edge="1" parent="1" source="act_pilih_hapus" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_periksa_syarat_hapus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="780" />
+              <mxPoint x="420" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_periksa_to_dec_syarat" edge="1" parent="1" source="act_periksa_syarat_hapus" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="dec_syarat_hapus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_syarat_terpenuhi" edge="1" parent="1" source="dec_syarat_hapus" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_konfirmasi_hapus">
+          <mxGeometry relative="1" x="-0.125" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_terpenuhi" connectable="0" parent="e_syarat_terpenuhi" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[terpenuhi]" vertex="1">
+          <mxGeometry relative="1" x="-0.1661" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_syarat_tdk_terpenuhi" edge="1" parent="1" source="dec_syarat_hapus" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_err_masih_terpakai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_tdk_terpenuhi" connectable="0" parent="e_syarat_tdk_terpenuhi" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak terpenuhi]" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_konfirmasi_hapus_to_merge" edge="1" parent="1" source="act_konfirmasi_hapus" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="merge_tiga_cabang">
+          <mxGeometry relative="1" x="0.2061" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="1070" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_merge_to_absah" edge="1" parent="1" source="merge_tiga_cabang" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_periksa_absah">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_absah_to_dec" edge="1" parent="1" source="act_periksa_absah" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="dec_absah">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_lengkap_sah" edge="1" parent="1" source="dec_absah" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_simpan">
+          <mxGeometry relative="1" x="0.1566" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="1290" />
+              <mxPoint x="430" y="1470" />
+              <mxPoint x="560" y="1470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_lengkap_sah" connectable="0" parent="e_lengkap_sah" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[lengkap dan sah]" vertex="1">
+          <mxGeometry relative="1" x="-0.6723" as="geometry">
+            <mxPoint y="99" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_tdk_lengkap_sah" edge="1" parent="1" source="dec_absah" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="act_err_sah">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="1290" />
+              <mxPoint x="700" y="1402.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_tdk_lengkap_sah" connectable="0" parent="e_tdk_lengkap_sah" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="[tidak lengkap/sah]" vertex="1">
+          <mxGeometry relative="1" x="0.163" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_simpan_to_final" edge="1" parent="1" source="act_simpan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" target="node_final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
