@@ -1,11 +1,11 @@
-ID artefak        : LAB-P02-UC
-Judul             : Latihan notasi fungsi laboratorium
-Pertemuan         : 02
-Sumber kebutuhan  : LAB-R01; LAB-R02
-Jenis/status      : Use case diagram / LATIHAN NOTASI
-Kakas             : [kakas yang digunakan]
-Pembuat           : [nama dan NIM]
-Versi dan tanggal : v01 / [tanggal pengerjaan]
-Asumsi            : Hak akses sesuai; autentikasi di luar latihan
-Pemeriksaan       : [hasil review]
-Riwayat revisi    : [perubahan yang benar-benar dilakukan]
+ID artefak          : 02
+Judul               : Sistem Informasi Peminjaman dan Pengembalian Peralatan Laboratorium Kampus
+Pertemuan           : Ke-dua
+Sumber skenario     : modul
+Jenis/status        : latihan
+Kakas               : drawio
+Pembuat             : 2406113
+Versi dan tanggal   : v01, 09-10-2026
+Asumsi/pertanyaan   : -
+Pemeriksaan         : -
+Riwayat revisi      : -                           

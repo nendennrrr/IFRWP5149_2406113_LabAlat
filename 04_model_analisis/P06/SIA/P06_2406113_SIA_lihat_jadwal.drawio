@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="y2Vp12kLIEGiyufJ1Quq">
+    <mxGraphModel dx="1387" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--1" parent="1" style="swimlane;startSize=30;fontStyle=1;html=1;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="520" width="260" x="490" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--2" parent="gMq_DuKJ4xMAi6raOPU--1" style="ellipse;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="115" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--3" parent="gMq_DuKJ4xMAi6raOPU--1" style="rounded=1;whiteSpace=wrap;html=1;" value="Membuka menu Lihat Jadwal Kuliah" vertex="1">
+          <mxGeometry height="45" width="200" x="30" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--4" parent="1" style="swimlane;startSize=30;fontStyle=1;html=1;" value="Sistem" vertex="1">
+          <mxGeometry height="520" width="300" x="750" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--5" parent="gMq_DuKJ4xMAi6raOPU--4" style="rounded=1;whiteSpace=wrap;html=1;" value="Mengambil dan menampilkan daftar&#xa;jadwal kuliah mahasiswa" vertex="1">
+          <mxGeometry height="45" width="220" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--6" parent="gMq_DuKJ4xMAi6raOPU--4" style="rhombus;whiteSpace=wrap;html=1;" value="Jadwal kuliah&#xa;tersedia?" vertex="1">
+          <mxGeometry height="60" width="110" x="95" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--7" parent="gMq_DuKJ4xMAi6raOPU--4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan informasi jadwal belum&#xa;diterbitkan" vertex="1">
+          <mxGeometry height="45" width="220" x="40" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--8" parent="gMq_DuKJ4xMAi6raOPU--4" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="130" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--9" parent="gMq_DuKJ4xMAi6raOPU--4" style="ellipse;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="135" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--10" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--11" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--12" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--13" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--7" value="[tidak tersedia]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--14" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--8" value="[tersedia]">
+          <mxGeometry relative="1" x="-0.06" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="490" />
+              <mxPoint x="1030" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--15" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--16" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

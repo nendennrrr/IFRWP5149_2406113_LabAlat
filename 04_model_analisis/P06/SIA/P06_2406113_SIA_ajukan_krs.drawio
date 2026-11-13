@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="y2Vp12kLIEGiyufJ1Quq">
+    <mxGraphModel dx="537" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--37" parent="1" style="swimlane;startSize=30;fontStyle=1;html=1;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="680" width="260" x="860" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--38" parent="gMq_DuKJ4xMAi6raOPU--37" style="ellipse;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="115" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--39" parent="gMq_DuKJ4xMAi6raOPU--37" style="rounded=1;whiteSpace=wrap;html=1;" value="Membuka menu Pengajuan KRS&#xa;dan memilih mata kuliah" vertex="1">
+          <mxGeometry height="45" width="200" x="30" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--40" parent="gMq_DuKJ4xMAi6raOPU--37" style="rounded=1;whiteSpace=wrap;html=1;" value="Menerima konfirmasi pengajuan KRS" vertex="1">
+          <mxGeometry height="45" width="200" x="30" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--41" parent="1" style="swimlane;startSize=30;fontStyle=1;html=1;" value="Sistem" vertex="1">
+          <mxGeometry height="680" width="320" x="1120" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--42" parent="gMq_DuKJ4xMAi6raOPU--41" style="rounded=1;whiteSpace=wrap;html=1;" value="Periksa Prasyarat Mata Kuliah&#xa;(include)" vertex="1">
+          <mxGeometry height="45" width="220" x="50" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--43" parent="gMq_DuKJ4xMAi6raOPU--41" style="rhombus;whiteSpace=wrap;html=1;" value="Prasyarat &amp; SKS&#xa;terpenuhi?" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--44" parent="gMq_DuKJ4xMAi6raOPU--41" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan prasyarat tidak&#xa;terpenuhi / melebihi batas SKS" vertex="1">
+          <mxGeometry height="45" width="220" x="50" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--45" parent="gMq_DuKJ4xMAi6raOPU--41" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menyimpan data pengajuan KRS&#xa;dengan status Menunggu Persetujuan" vertex="1">
+          <mxGeometry height="50" width="220" x="50" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--46" parent="gMq_DuKJ4xMAi6raOPU--41" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="140" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--47" parent="gMq_DuKJ4xMAi6raOPU--41" style="ellipse;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="145" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--48" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--38" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--49" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--39" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--50" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--42" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--51" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--44" value="[tidak terpenuhi]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--52" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--45" value="[terpenuhi]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1415" y="780" />
+              <mxPoint x="1415" y="945" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--53" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--54" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--40" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--55" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1145" y="862" />
+              <mxPoint x="1145" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--56" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

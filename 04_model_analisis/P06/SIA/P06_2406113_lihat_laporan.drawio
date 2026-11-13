@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="y2Vp12kLIEGiyufJ1Quq">
+    <mxGraphModel dx="537" dy="-295" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--118" parent="1" style="swimlane;startSize=30;fontStyle=1;html=1;" value="Ketua Program Studi" vertex="1">
+          <mxGeometry height="680" width="260" x="1530" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--119" parent="gMq_DuKJ4xMAi6raOPU--118" style="ellipse;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="115" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--120" parent="gMq_DuKJ4xMAi6raOPU--118" style="rounded=1;whiteSpace=wrap;html=1;" value="Membuka fungsi Lihat Laporan" vertex="1">
+          <mxGeometry height="45" width="200" x="30" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--121" parent="gMq_DuKJ4xMAi6raOPU--118" style="rounded=1;whiteSpace=wrap;html=1;" value="Memilih periode laporan" vertex="1">
+          <mxGeometry height="45" width="200" x="30" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--122" parent="1" style="swimlane;startSize=30;fontStyle=1;html=1;" value="Sistem" vertex="1">
+          <mxGeometry height="680" width="300" x="1790" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--123" parent="gMq_DuKJ4xMAi6raOPU--122" style="rounded=1;whiteSpace=wrap;html=1;" value="Menampilkan daftar periode laporan" vertex="1">
+          <mxGeometry height="45" width="220" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--124" parent="gMq_DuKJ4xMAi6raOPU--122" style="rounded=1;whiteSpace=wrap;html=1;" value="Menampilkan laporan periode terpilih" vertex="1">
+          <mxGeometry height="45" width="220" x="40" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--125" parent="gMq_DuKJ4xMAi6raOPU--122" style="rhombus;whiteSpace=wrap;html=1;" value="Ada data&#xa;laporan?" vertex="1">
+          <mxGeometry height="60" width="110" x="95" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--126" parent="gMq_DuKJ4xMAi6raOPU--122" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menampilkan pesan tidak ada data&#xa;pada periode tersebut" vertex="1">
+          <mxGeometry height="45" width="220" x="40" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--127" parent="gMq_DuKJ4xMAi6raOPU--122" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="130" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--128" parent="gMq_DuKJ4xMAi6raOPU--122" style="ellipse;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="135" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--129" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--119" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--130" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--120" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--131" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--123" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--132" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--121" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--133" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--124" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--134" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--125" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--126" value="[tidak ada]">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--135" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--125" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--127" value="[ada]">
+          <mxGeometry relative="1" x="-0.0568" as="geometry">
+            <Array as="points">
+              <mxPoint x="2070" y="1730" />
+              <mxPoint x="2070" y="1950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--136" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--126" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gMq_DuKJ4xMAi6raOPU--137" edge="1" parent="1" source="gMq_DuKJ4xMAi6raOPU--127" style="edgeStyle=orthogonalEdgeStyle;rounded=1;" target="gMq_DuKJ4xMAi6raOPU--128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
