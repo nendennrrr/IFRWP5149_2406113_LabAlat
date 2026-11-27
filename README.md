@@ -23,3 +23,6 @@
 
 # Pertemuan 6
 # Activity Diagram: Dari Skenario Ke Alur Aktivitas
+
+# Pertemuan 7
+# SEQUENCE DIAGRAM: INTERAKSI OBJEK BERDASARKAN SKENARIO DAN KANDIDAT CLASS
